@@ -41,7 +41,8 @@ run_fvt() {
   kubectl get all -n "$SERVING_NS"
   export KUBECONFIG=~/.kube/config
     
-  go test -v ./fvt -ginkgo.v -ginkgo.progress -test.timeout 40m > fvt.out
+  # go test -v ./fvt -ginkgo.v -ginkgo.progress -ginkgo.failFast -test.timeout 40m > fvt.out
+  make fvt
   cat fvt.out
   RUN_STATUS=$(cat fvt.out | awk '{ print $1}' | grep PASS)
 
