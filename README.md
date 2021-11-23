@@ -45,10 +45,6 @@ These are helper Java libraries used by the ModelMesh component.
 - [kv-utils](https://github.com/IBM/kv-utils) - Useful KV store recipes abstracted over etcd and Zookeeper
 - [litelinks-core](https://github.com/IBM/litelinks-core) - RPC/service discovery library based on Apache Thrift, used only for communications internal to ModelMesh.
 
-## Contributing
-
-Please read our [contributing guide](./CONTRIBUTING.md) for details on contributing.
-
 ### Building Images
 
 ```bash
